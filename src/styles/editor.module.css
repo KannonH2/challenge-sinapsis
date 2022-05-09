@@ -1,0 +1,172 @@
+.editorContainer {
+  background-image: url("../assets/editor-bkg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.finalFile {
+  /* background-color: rgba(0, 0, 0, 0.589); */
+  border: 3px solid #fff;
+  padding: 5px;
+  margin: 5px;
+  min-width: 30%;
+  min-height: 30%;
+  max-width: 50%;
+  max-height: 60%;
+  margin-top: 5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  width: 30vw;
+}
+
+.buttons button {
+  width: 10rem;
+}
+
+.homeButton {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.homeButton:hover{
+  color: rgb(0, 89, 255);
+  transform: scale(1.1);
+}
+
+.logoutButtonContainer {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.logoutButton {
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logoutButton:hover {
+  color: rgb(0, 89, 255);
+  transform: scale(1.1);
+}
+
+
+.editButton,
+.downloadButton {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(0, 89, 255);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.editButton:hover,
+.downloadButton:hover {
+  background-color: rgb(0, 89, 255);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  .finalFile {
+    min-width: 50%;
+    min-height: 30%;
+    max-width: 90%;
+    max-height: 60%;
+  }
+
+  .editorContainer {
+    background-size: cover;
+    background-position: 25% 75%;
+  }
+
+  .finalFile {
+    margin-top: 10rem;
+  }
+
+  .logoutButton {
+    top: 0;
+    left: 0;
+  }
+
+  .homeButton {
+    top: 2.5rem;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .logoutButton {
+    top: 0;
+    left: 0;
+  }
+
+  .homeButton {
+    top: 2.5rem;
+    left: 0;
+  }
+
+  .finalFile {
+    min-width: 50%;
+    min-height: 30%;
+    max-width: 90%;
+    max-height: 60%;
+    margin-top: 8rem;
+  }
+}
