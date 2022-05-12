@@ -28,12 +28,8 @@ export default function Prev() {
       navigate("/");
     }
   }, [user, isLoading, navigate]);
-  useEffect(() => {
-    if (!isAuthenticated && !isLoading) {
-      navigate("/");
-    }
-  }, []);
-  /*eslint-enable*/
+ 
+  
 
   return (
     <div className={styles.mainContainer}>

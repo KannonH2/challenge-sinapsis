@@ -4,7 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { openDefaultEditor } from "../pintura/pintura";
 import { useNavigate } from "react-router-dom";
 import "../pintura/pintura.css";
-import styles from "../../styles/editor.module.css";
+import styles from "../../styles/edit.module.css";
 import JsFileDownloader from "js-file-downloader";
 
 const editImage = (image, done) => {
@@ -28,7 +28,7 @@ const editImage = (image, done) => {
   });
 };
 
-function Pint() {
+function Edit() {
   const { user, isLoading, logout, isAuthenticated } = useAuth0();
   const navigate = useNavigate();
   const path = useSelector((state) => state.thumbnail.path);
@@ -80,6 +80,7 @@ function Pint() {
       navigate("/");
     }
   }, [user, isLoading, navigate]);
+
   useEffect(() => {
     if (!isAuthenticated && !isLoading) {
       navigate("/");
@@ -117,4 +118,4 @@ function Pint() {
   );
 }
 
-export default Pint;
+export default Edit;
