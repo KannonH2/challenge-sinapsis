@@ -53,7 +53,6 @@ export default function DropZone() {
     }
   };
 
-  /*eslint-enable */
   useEffect(() => {
     files.forEach((file) => URL.revokeObjectURL(file.preview));
   }, [files]);
@@ -61,8 +60,8 @@ export default function DropZone() {
   useEffect(() => {
     dispatch(setLoading(false));
     dispatch(resetState());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  /*eslint-enable */
 
   return (
     <section className={styles.dropzone}>
