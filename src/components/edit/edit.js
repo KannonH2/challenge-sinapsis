@@ -17,7 +17,8 @@ const editImage = (image, done) => {
   });
 
   editor.on("close", () => {
-    // the user cancelled editing the image
+    const output = editor.output();
+    done(output);
   });
 
   editor.on("process", ({ dest, imageState }) => {

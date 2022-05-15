@@ -34,7 +34,7 @@ export default function Home() {
         <p className={styles.text}>- After upload an image, you can edit it.</p>
         <p className={styles.text}>
           - If you upload a video, the app processes the video and return an
-          image, after that, you can edit the image returned.{" "}
+          image, after that, you can edit the returned image.{" "}
         </p>
       </div>
     </div>

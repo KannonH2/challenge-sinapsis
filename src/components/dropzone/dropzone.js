@@ -68,7 +68,7 @@ export default function DropZone() {
       <div {...getRootProps()}>
         <input {...getInputProps()} />
         <p className={styles.dropzoneText}>
-          Drop your file here or click to select
+          Drop your file or click to upload
         </p>
         <FiUpload />
       </div>
